@@ -1,0 +1,37 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	color: #2e475d;
+    font-family: "Lexend Deca",sans-serif;
+	background-color: rgb(242, 245, 248);
+}
+h1 {
+    font-size: 2rem;
+    line-height: 1.3125em;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+input, select, textarea {
+    font-family: "Lexend Deca",sans-serif;
+}
+fieldset {	
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+	body {
+		color: white;
+		background: black;
+	}
+}

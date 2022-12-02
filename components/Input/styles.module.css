@@ -1,0 +1,25 @@
+.input {
+    width: 100%;
+    text-align: left;
+    color: #2d3e50;
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+    overflow: visible;
+    font-weight: 600;
+    font-size: .9em;
+}
+.input:hover, .input:focus {
+    border-color: rgb(255, 122, 89);
+}
+.input::placeholder {
+    color: #859fbb;
+}
+.input_size_md {
+    font-size: .9em;
+    font-weight: 500;
+}
+.input_size_lg {
+    font-size: 1.2em;
+    font-weight: 600;
+}

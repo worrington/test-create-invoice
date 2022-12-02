@@ -1,0 +1,106 @@
+.invoice_create_seccion {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+    margin: 0px auto;
+    padding: 6em 0px;
+    perspective: 500px;
+    background-color: rgb(242, 245, 248);
+    overflow: hidden;
+}
+.invoice_create_seccion h2 {
+    font-size: calc(1vw + 1rem);
+}
+
+.card {
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5em 3em;
+    backface-visibility: hidden;
+    border: 1px solid rgb(242, 245, 248);
+    border-radius: 0.2em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 50%) 0px 0.5em 1.5em -0.5em;
+    transition: transform 0.5s ease 0s;
+}
+
+.info_invoice {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info_invoice_data {
+    width: 100%;
+    height: 24em;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.info_invoice_date {
+    width: 100%;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-end
+}
+.figure_invoice {
+    position: relative;
+    width: 60%;
+    max-width: 60%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: auto;
+    overflow: hidden;
+    border: 2px dashed rgb(253, 143, 95);
+    transform: scale(1);
+    transition: transform 0.3s ease 0s;
+}
+.figure_invoice input[type="file" i] {
+    position: absolute;
+    font-size: 10em;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.figure_text {
+    width: 50%;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    display: inline;
+    line-height: 1.8rem
+}
+
+@media (max-width: 620px) {
+    .info_invoice {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
